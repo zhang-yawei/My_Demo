@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SQLViewController.h
 //  myDemoAddUp
 //
 //  Created by zhang on 16/4/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface SQLViewController : UIViewController
 
 @end
-

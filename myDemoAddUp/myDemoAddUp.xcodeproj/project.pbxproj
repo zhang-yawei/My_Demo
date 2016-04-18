@@ -15,6 +15,8 @@
 		1F05D23B1CC47987000F404A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F05D2391CC47987000F404A /* LaunchScreen.storyboard */; };
 		1F05D2461CC47987000F404A /* myDemoAddUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D2451CC47987000F404A /* myDemoAddUpTests.m */; };
 		1F05D2511CC47987000F404A /* myDemoAddUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D2501CC47987000F404A /* myDemoAddUpUITests.m */; };
+		1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D25F1CC47B13000F404A /* SQLViewController.m */; };
+		1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F05D2611CC48794000F404A /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		1F05D24C1CC47987000F404A /* myDemoAddUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myDemoAddUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F05D2501CC47987000F404A /* myDemoAddUpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myDemoAddUpUITests.m; sourceTree = "<group>"; };
 		1F05D2521CC47987000F404A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F05D25E1CC47B13000F404A /* SQLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewController.h; sourceTree = "<group>"; };
+		1F05D25F1CC47B13000F404A /* SQLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewController.m; sourceTree = "<group>"; };
+		1F05D2611CC48794000F404A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 		1F05D21F1CC47987000F404A = {
 			isa = PBXGroup;
 			children = (
+				1F05D2611CC48794000F404A /* libsqlite3.tbd */,
 				1F05D22A1CC47987000F404A /* myDemoAddUp */,
 				1F05D2441CC47987000F404A /* myDemoAddUpTests */,
 				1F05D24F1CC47987000F404A /* myDemoAddUpUITests */,
@@ -105,6 +112,8 @@
 				1F05D22F1CC47987000F404A /* AppDelegate.m */,
 				1F05D2311CC47987000F404A /* ViewController.h */,
 				1F05D2321CC47987000F404A /* ViewController.m */,
+				1F05D25E1CC47B13000F404A /* SQLViewController.h */,
+				1F05D25F1CC47B13000F404A /* SQLViewController.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
+				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,
 			);
