@@ -1,6 +1,5 @@
  #import "SQLViewController.h"
  #import <sqlite3.h>
-
  @interface SQLViewController ()
    //db是数据库的句柄，就是数据库的象征，要对数据库进行增删改查，就得操作这个实例
  @property(nonatomic,assign)sqlite3 *db;
@@ -124,6 +123,9 @@ sqlite3_callback LoadMyInfo( void * para, int n_column, char ** column_value, ch
     printf( " ------------------\n " );
     return 0;
     
+    
+    
+    //正常情况下，回调函数应该返回0，如果它返回一个非0值，则sqlite3_exec函数将终止执行，并返回SQLITE_ABORT错误码。
 }
 
 
@@ -291,8 +293,11 @@ sqlite3_close ( self.db );
         }
         sqlite3_finalize(selStmt); //析构掉 selStmt
   //      result = sqlite3_reset (stat);
+   //       prepared语句可以被重置（调用sqlite3_reset函数），然后可以重新绑定参数之后重新执行。sqlite3_prepare_v2函数代价昂贵，所以通常尽可能的重用prepared语句。
   //      这样， stat 结构又成为 sqlite3_prepare 完成时的状态，你可以重新为它 bind 内容。
 
+//        sqlite3_clear_bindings
+//        如果想确保绑定到参数的值，不会引起内存泄露。最好在每次重置语句时，清空所有参数绑定。
     }
  
 }
@@ -314,6 +319,35 @@ sqlite3_close ( self.db );
  
  
 
+ http://www.jb51.net/article/36927.htm
+ 
+ 
+ 
+ 多个进程可同时打开同一个数据库。多个进程可以同时进行SELECT操作，但在任一时刻，只能有一个进程对数据库进行更改。
+ SQLite允许多个进程同时打开一个数据库，同时读一个数据库。当有任何进程想要写时，它必须在更新过程中锁住数据库文件。但那通常只是几毫秒的时间。其它进程只需等待写进程干完活结束。典型地，其它嵌入式的SQL数据库引擎同时只允许一个进程连接到数据库。
+ 但是，Client/Server数据库引擎（如PostgreSQL, MySQL,或Oracle）通常支持更高级别的并发，并且允许多个进程同时写同一个数据库。这种机制在Client/Server结构的数据库上是可能的，因为总是有一个单一的服务器进程很好地控制、协调对数据库的访问。如果你的应用程序需要很多的并发，那么你应该考虑使用一个Client/Server结构的数据库。但经验表明，很多应用程序需要的并发，往往比其设计者所想象的少得多。
+ 
+ 当SQLite试图访问一个被其它进程锁住的文件时，缺省的行为是返回SQLITE_BUSY。可以在C代码中使用sqlite3_busy_handler()或sqlite3_busy_timeout() API函数调整这一行为。
+ 
+ 
+ 9、SQLite线程安全吗？
+ 线程是魔鬼（Threads are evil）。避免使用它们。
+ SQLite是线程安全的。由于很多用户会忽略我们在上一段中给出的建议，我们做出了这种让步。但是，为了达到线程安全，SQLite在编译时必须将SQLITE_THREADSAFE预处理宏置为1。在Windows和Linux上，已编译的好的二进制发行版中都是这样设置的。如果不确定你所使用的库是否是线程安全的，可以调用sqlite3_threadsafe()接口找出。
+ 
+ 
+ 
+ 10、在SQLite数据库中如何列出所有的表和索引？
+ 如果你运行sqlite3命令行来访问你的数据库，可以键入“.tables”来获得所有表的列表。或者，你可以输入“.schema”来看整个数据库模式，包括所有的表的索引。输入这些命令，后面跟一个LIKE模式匹配可以限制显示的表。
+ 
+ 
+
+ 12、在SQLite中，VARCHAR字段最长是多少？
+ SQLite不强制VARCHAR的长度。你可以在SQLITE中声明一个VARCHAR(10)，SQLite还是可以很高兴地允许你放入500个字符。并且这500个字符是原封不动的，它永远不会被截断。
+ 
+ 
+ SQLite有有限地ALTER TABLE支持。你可以使用它来在表的末尾增加一列，可更改表的名称。如果需要对表结构做更复杂的改变，则必须重新建表。重建时可以先将已存在的数据放到一个临时表中，删除原表，创建新表，然后将数据从临时表中复制回来。
+
+ 
  */
 
 
