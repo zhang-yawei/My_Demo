@@ -18,6 +18,8 @@
 		1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D25F1CC47B13000F404A /* SQLViewController.m */; };
 		1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F05D2611CC48794000F404A /* libsqlite3.tbd */; };
 		1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C47E11CC736200044E622 /* CFNetworkViewController.m */; };
+		1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EBD311CCF50550056003F /* JSCoreViewController.m */; };
+		1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		1F05D2611CC48794000F404A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1F2C47E01CC736200044E622 /* CFNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkViewController.h; sourceTree = "<group>"; };
 		1F2C47E11CC736200044E622 /* CFNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkViewController.m; sourceTree = "<group>"; };
+		1F7EBD301CCF50550056003F /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
+		1F7EBD311CCF50550056003F /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
+		1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */,
 				1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +96,7 @@
 		1F05D21F1CC47987000F404A = {
 			isa = PBXGroup;
 			children = (
+				1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */,
 				1F05D2611CC48794000F404A /* libsqlite3.tbd */,
 				1F05D22A1CC47987000F404A /* myDemoAddUp */,
 				1F05D2441CC47987000F404A /* myDemoAddUpTests */,
@@ -119,6 +126,8 @@
 				1F05D25F1CC47B13000F404A /* SQLViewController.m */,
 				1F2C47E01CC736200044E622 /* CFNetworkViewController.h */,
 				1F2C47E11CC736200044E622 /* CFNetworkViewController.m */,
+				1F7EBD301CCF50550056003F /* JSCoreViewController.h */,
+				1F7EBD311CCF50550056003F /* JSCoreViewController.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
@@ -288,6 +297,7 @@
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
+				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
