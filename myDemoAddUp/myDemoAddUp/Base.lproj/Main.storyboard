@@ -35,13 +35,24 @@
                                             <segue destination="uj7-hw-Vpe" kind="push" id="Tsh-5e-g4v"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hid-dG-vn3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Hid-dG-vn3">
                                         <rect key="frame" x="0.0" y="108" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hid-dG-vn3" id="7xj-9Q-PB8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="网络编程之 CFNwetwork" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3r-sd-2Dk">
+                                                    <rect key="frame" x="23" y="0.0" width="188" height="35.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="npk-aO-g3A" kind="push" id="BGD-nN-axu"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hEo-m6-lB4">
                                         <rect key="frame" x="0.0" y="152" width="375" height="44"/>
@@ -112,9 +123,29 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qI-zl-PIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632.5" y="-411.5"/>
+            <point key="canvasLocation" x="608.5" y="-425.5"/>
         </scene>
-        <!--View Controller-->
+        <!--CFNetwork-->
+        <scene sceneID="RX1-Qp-FFL">
+            <objects>
+                <viewController id="npk-aO-g3A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RgV-Sg-tbn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ogP-Qt-KwE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z8O-IQ-Ow2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CFNetwork" id="Sng-w0-Eah"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHz-pn-srZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.5" y="-373.5"/>
+        </scene>
+        <!--sqlite3-->
         <scene sceneID="D4O-oL-nFS">
             <objects>
                 <viewController id="uj7-hw-Vpe" customClass="SQLViewController" sceneMemberID="viewController">
@@ -199,12 +230,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EaM-Bc-Au7"/>
+                    <navigationItem key="navigationItem" title="sqlite3" id="EaM-Bc-Au7"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3r5-Ng-LiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078.5" y="-477.5"/>
+            <point key="canvasLocation" x="1047.5" y="-1097.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -242,7 +273,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suK-CZ-Tya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196.5" y="-411.5"/>
+            <point key="canvasLocation" x="207.5" y="-420.5"/>
         </scene>
     </scenes>
 </document>

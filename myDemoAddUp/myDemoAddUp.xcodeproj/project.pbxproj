@@ -17,6 +17,7 @@
 		1F05D2511CC47987000F404A /* myDemoAddUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D2501CC47987000F404A /* myDemoAddUpUITests.m */; };
 		1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D25F1CC47B13000F404A /* SQLViewController.m */; };
 		1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F05D2611CC48794000F404A /* libsqlite3.tbd */; };
+		1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C47E11CC736200044E622 /* CFNetworkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		1F05D25E1CC47B13000F404A /* SQLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewController.h; sourceTree = "<group>"; };
 		1F05D25F1CC47B13000F404A /* SQLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewController.m; sourceTree = "<group>"; };
 		1F05D2611CC48794000F404A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1F2C47E01CC736200044E622 /* CFNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkViewController.h; sourceTree = "<group>"; };
+		1F2C47E11CC736200044E622 /* CFNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				1F05D2321CC47987000F404A /* ViewController.m */,
 				1F05D25E1CC47B13000F404A /* SQLViewController.h */,
 				1F05D25F1CC47B13000F404A /* SQLViewController.m */,
+				1F2C47E01CC736200044E622 /* CFNetworkViewController.h */,
+				1F2C47E11CC736200044E622 /* CFNetworkViewController.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */,
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
@@ -506,6 +512,7 @@
 				1F05D2571CC47987000F404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F05D2581CC47987000F404A /* Build configuration list for PBXNativeTarget "myDemoAddUpTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +521,7 @@
 				1F05D25A1CC47987000F404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F05D25B1CC47987000F404A /* Build configuration list for PBXNativeTarget "myDemoAddUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +530,7 @@
 				1F05D25D1CC47987000F404A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
