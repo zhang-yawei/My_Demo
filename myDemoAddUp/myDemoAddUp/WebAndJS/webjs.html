@@ -16,11 +16,17 @@
     
 	<button id="hallo" onclick="buttonClick()"> 点击button</button>
 
+
     </body>
 
 <script>
+
 function buttonClick(){
 	log("调用js方法");
+}
+function returnFromJS(){
+  alert("执行returnFromJS");
+  return "abcde";
 }
 </script>
 

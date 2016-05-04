@@ -8,7 +8,11 @@
 
 #import "WebJsViewController.h"
 #import "JSWebView.h"
+#import <JavaScriptCore/JavaScriptCore.h>
 @interface WebJsViewController ()
+{
+    JSWebView *webView;
+}
 
 @end
 
@@ -20,10 +24,29 @@
    NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"webjs" ofType:@"html"];
     NSURL *htmlUrl = [NSURL URLWithString:htmlPath];
     
-    JSWebView *webView = [[JSWebView alloc]initWithFrame:self.view.bounds];
+    webView = [[JSWebView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:webView];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:htmlUrl];
     [webView loadRequest:request];
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(200, 200, 100, 50);
+    [webView addSubview:button];
+    [button addTarget:self action:@selector(buttonPressDown) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+-(void)buttonPressDown
+{
+    JSContext *jscontext = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    
+    
+   JSValue *jsValue = [jscontext evaluateScript:@"window.returnFromJS();"];
+    NSString *string = [jsValue toString];
+    NSLog(@"执行js方法的返回值:%@",string);
+    
 }
 
 - (void)didReceiveMemoryWarning {
