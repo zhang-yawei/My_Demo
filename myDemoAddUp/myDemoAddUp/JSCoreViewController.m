@@ -33,7 +33,7 @@
 
 
 
--(void)someThing
+-(IBAction)someThing:(id)sender
 {
     //JSVirtualMachine为JavaScript的运行提供了底层资源，JSContext就为其提供着运行环境，通过- (JSValue *)evaluateScript:(NSString *)script;方法就可以执行一段JavaScript脚本，并且如果其中有方法、变量等信息都会被存储在其中以便在需要的时候使用。而JSContext的创建都是基于JSVirtualMachine：- (id)initWithVirtualMachine:(JSVirtualMachine *)virtualMachine;，如果是使用- (id)init;进行初始化，那么在其内部会自动创建一个新的JSVirtualMachine对象然后调用前边的初始化方法。
     
@@ -77,7 +77,7 @@
     
 }
 
--(void)useingBlock
+-(IBAction)useingBlock:(id)sender
 {
     JSContext *context = [[JSContext alloc] init];
     context[@"log"] = ^() {
@@ -88,6 +88,7 @@
         }
         
         JSValue *this = [JSContext currentThis];
+        
         NSLog(@"this: %@",this);
         NSLog(@"-------End Log-------");
     };
@@ -95,6 +96,36 @@
     [context evaluateScript:@"log('ider', [7, 21], { hello:'world', js:100 });"];
     
 }
+
+- (IBAction)row_one:(id)sender {
+    
+    JSContext *context = [[JSContext alloc]init];
+    context.exceptionHandler = ^(JSContext *context, JSValue *exception){
+        NSLog(@"exception:%@",exception);
+        context.exception = exception;
+    };
+    
+    context[@"log"] = ^(){
+      
+        NSArray *argueArr = [JSContext currentArguments];
+        for (id object in argueArr) {
+            NSLog(@"object of argurArray:%@",object);
+        }
+        
+    };
+    
+    
+    JSValue *obj = [context evaluateScript:@ "var jsObj = {number: 7, name: 'Ider'}; jsObj"];
+    NSLog(@"jsvalue:               number_%@   name_%@",obj[@"number"],obj[@"name"]);
+
+    NSDictionary *dic = [obj toDictionary];
+    NSLog(@"jsvalue to dictionary: number_%@   name_%@",dic[@"number"],dic[@"name"]);
+    
+    
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {

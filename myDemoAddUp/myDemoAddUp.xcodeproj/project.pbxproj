@@ -20,6 +20,10 @@
 		1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C47E11CC736200044E622 /* CFNetworkViewController.m */; };
 		1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EBD311CCF50550056003F /* JSCoreViewController.m */; };
 		1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */; };
+		1FB79B291CD059FB00702263 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB79B281CD059FB00702263 /* AFViewController.m */; };
+		1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2631CD986C3007606ED /* WebJsViewController.m */; };
+		1FD9E2681CD98877007606ED /* JSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2671CD98877007606ED /* JSWebView.m */; };
+		1FD9E26A1CD98C98007606ED /* webjs.html in Resources */ = {isa = PBXBuildFile; fileRef = 1FD9E2691CD98C98007606ED /* webjs.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,13 @@
 		1F7EBD301CCF50550056003F /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
 		1F7EBD311CCF50550056003F /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1FB79B271CD059FB00702263 /* AFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
+		1FB79B281CD059FB00702263 /* AFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
+		1FD9E2621CD986C3007606ED /* WebJsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebJsViewController.h; sourceTree = "<group>"; };
+		1FD9E2631CD986C3007606ED /* WebJsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebJsViewController.m; sourceTree = "<group>"; };
+		1FD9E2661CD98877007606ED /* JSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebView.h; sourceTree = "<group>"; };
+		1FD9E2671CD98877007606ED /* JSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebView.m; sourceTree = "<group>"; };
+		1FD9E2691CD98C98007606ED /* webjs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webjs.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +139,12 @@
 				1F2C47E11CC736200044E622 /* CFNetworkViewController.m */,
 				1F7EBD301CCF50550056003F /* JSCoreViewController.h */,
 				1F7EBD311CCF50550056003F /* JSCoreViewController.m */,
+				1FB79B271CD059FB00702263 /* AFViewController.h */,
+				1FB79B281CD059FB00702263 /* AFViewController.m */,
+				1FD9E2621CD986C3007606ED /* WebJsViewController.h */,
+				1FD9E2631CD986C3007606ED /* WebJsViewController.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
+				1FD9E2651CD98767007606ED /* WebAndJS */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
 				1F05D23C1CC47987000F404A /* Info.plist */,
@@ -161,6 +177,16 @@
 				1F05D2521CC47987000F404A /* Info.plist */,
 			);
 			path = myDemoAddUpUITests;
+			sourceTree = "<group>";
+		};
+		1FD9E2651CD98767007606ED /* WebAndJS */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9E2661CD98877007606ED /* JSWebView.h */,
+				1FD9E2671CD98877007606ED /* JSWebView.m */,
+				1FD9E2691CD98C98007606ED /* webjs.html */,
+			);
+			path = WebAndJS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD9E26A1CD98C98007606ED /* webjs.html in Resources */,
 				1F05D23B1CC47987000F404A /* LaunchScreen.storyboard in Resources */,
 				1F05D2381CC47987000F404A /* Assets.xcassets in Resources */,
 				1F05D2361CC47987000F404A /* Main.storyboard in Resources */,
@@ -295,10 +322,13 @@
 			files = (
 				1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */,
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
+				1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
+				1FB79B291CD059FB00702263 /* AFViewController.m in Sources */,
 				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,
+				1FD9E2681CD98877007606ED /* JSWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
