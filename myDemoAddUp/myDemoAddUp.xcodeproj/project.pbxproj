@@ -17,7 +17,10 @@
 		1F05D2511CC47987000F404A /* myDemoAddUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D2501CC47987000F404A /* myDemoAddUpUITests.m */; };
 		1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F05D25F1CC47B13000F404A /* SQLViewController.m */; };
 		1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F05D2611CC48794000F404A /* libsqlite3.tbd */; };
+		1F20F7D01CE17D4C00972012 /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F20F7CF1CE17D4C00972012 /* NetWorkViewController.m */; };
 		1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C47E11CC736200044E622 /* CFNetworkViewController.m */; };
+		1F33ABF11CDB37050031E07C /* CollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33ABF01CDB37050031E07C /* CollectionVC.m */; };
+		1F33ABF41CDB38570031E07C /* MYCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */; };
 		1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EBD311CCF50550056003F /* JSCoreViewController.m */; };
 		1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */; };
 		1FB79B291CD059FB00702263 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB79B281CD059FB00702263 /* AFViewController.m */; };
@@ -63,8 +66,14 @@
 		1F05D25E1CC47B13000F404A /* SQLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewController.h; sourceTree = "<group>"; };
 		1F05D25F1CC47B13000F404A /* SQLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewController.m; sourceTree = "<group>"; };
 		1F05D2611CC48794000F404A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1F20F7CE1CE17D4C00972012 /* NetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkViewController.h; sourceTree = "<group>"; };
+		1F20F7CF1CE17D4C00972012 /* NetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkViewController.m; sourceTree = "<group>"; };
 		1F2C47E01CC736200044E622 /* CFNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNetworkViewController.h; sourceTree = "<group>"; };
 		1F2C47E11CC736200044E622 /* CFNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNetworkViewController.m; sourceTree = "<group>"; };
+		1F33ABEF1CDB37050031E07C /* CollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionVC.h; sourceTree = "<group>"; };
+		1F33ABF01CDB37050031E07C /* CollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionVC.m; sourceTree = "<group>"; };
+		1F33ABF21CDB38570031E07C /* MYCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCollectionViewLayout.h; sourceTree = "<group>"; };
+		1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCollectionViewLayout.m; sourceTree = "<group>"; };
 		1F7EBD301CCF50550056003F /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
 		1F7EBD311CCF50550056003F /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -143,6 +152,12 @@
 				1FB79B281CD059FB00702263 /* AFViewController.m */,
 				1FD9E2621CD986C3007606ED /* WebJsViewController.h */,
 				1FD9E2631CD986C3007606ED /* WebJsViewController.m */,
+				1F20F7CE1CE17D4C00972012 /* NetWorkViewController.h */,
+				1F20F7CF1CE17D4C00972012 /* NetWorkViewController.m */,
+				1F33ABEF1CDB37050031E07C /* CollectionVC.h */,
+				1F33ABF01CDB37050031E07C /* CollectionVC.m */,
+				1F33ABF21CDB38570031E07C /* MYCollectionViewLayout.h */,
+				1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
 				1FD9E2651CD98767007606ED /* WebAndJS */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
@@ -320,11 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F33ABF11CDB37050031E07C /* CollectionVC.m in Sources */,
 				1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */,
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
 				1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */,
+				1F33ABF41CDB38570031E07C /* MYCollectionViewLayout.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
+				1F20F7D01CE17D4C00972012 /* NetWorkViewController.m in Sources */,
 				1FB79B291CD059FB00702263 /* AFViewController.m in Sources */,
 				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,

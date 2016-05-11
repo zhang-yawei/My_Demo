@@ -111,13 +111,24 @@
                                             <segue destination="sJ8-XJ-vAT" kind="push" id="j2B-06-KF4"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DXz-vt-Oaw">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="DXz-vt-Oaw">
                                         <rect key="frame" x="0.0" y="284" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXz-vt-Oaw" id="F69-WP-5Js">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CollectionView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAw-jD-V66">
+                                                    <rect key="frame" x="21" y="0.0" width="291" height="35.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eiD-J8-85H" kind="push" id="b8r-kV-DsJ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PUB-tv-4pB">
                                         <rect key="frame" x="0.0" y="328" width="375" height="44"/>
@@ -158,6 +169,26 @@
             </objects>
             <point key="canvasLocation" x="733.5" y="-484.5"/>
         </scene>
+        <!--collectionview-->
+        <scene sceneID="rKx-uw-Voq">
+            <objects>
+                <viewController id="eiD-J8-85H" customClass="CollectionVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MP5-1T-EI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwj-0N-4eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AVO-2q-jhp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="collectionview" id="c1K-G0-Qje"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3a-yh-hsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336.5" y="1342.5"/>
+        </scene>
         <!--CFNetwork-->
         <scene sceneID="RX1-Qp-FFL">
             <objects>
@@ -176,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHz-pn-srZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.5" y="-864.5"/>
+            <point key="canvasLocation" x="1368.5" y="-1848.5"/>
         </scene>
         <!--sqlite3-->
         <scene sceneID="D4O-oL-nFS">
@@ -268,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3r5-Ng-LiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422.5" y="-1754.5"/>
+            <point key="canvasLocation" x="1368.5" y="-2676.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oib-fx-Aoc">
@@ -297,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpv-3d-JIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1337.5" y="683.5"/>
+            <point key="canvasLocation" x="1368.5" y="-236.5"/>
         </scene>
         <!--web and js-->
         <scene sceneID="11D-DS-Bmc">
@@ -317,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XA-jX-KK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1337.5" y="1405.5"/>
+            <point key="canvasLocation" x="1336.5" y="559.5"/>
         </scene>
         <!--JSCore-->
         <scene sceneID="tne-QT-ifu">
@@ -360,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360.5" y="-118.5"/>
+            <point key="canvasLocation" x="1368.5" y="-1026.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nqH-Gh-LqA">
