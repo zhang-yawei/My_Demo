@@ -21,12 +21,18 @@
 		1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2C47E11CC736200044E622 /* CFNetworkViewController.m */; };
 		1F33ABF11CDB37050031E07C /* CollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33ABF01CDB37050031E07C /* CollectionVC.m */; };
 		1F33ABF41CDB38570031E07C /* MYCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */; };
+		1F5B21071CE57B8500C94765 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B21061CE57B8500C94765 /* SystemConfiguration.framework */; };
 		1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EBD311CCF50550056003F /* JSCoreViewController.m */; };
 		1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */; };
 		1FB79B291CD059FB00702263 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB79B281CD059FB00702263 /* AFViewController.m */; };
 		1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2631CD986C3007606ED /* WebJsViewController.m */; };
 		1FD9E2681CD98877007606ED /* JSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2671CD98877007606ED /* JSWebView.m */; };
 		1FD9E26A1CD98C98007606ED /* webjs.html in Resources */ = {isa = PBXBuildFile; fileRef = 1FD9E2691CD98C98007606ED /* webjs.html */; };
+		1FEF3EB01CE9A25000EE8DCC /* NSString+HashWithType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EAF1CE9A25000EE8DCC /* NSString+HashWithType.m */; };
+		1FEF3EBB1CE9B71B00EE8DCC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EB41CE9B71B00EE8DCC /* NSData+Base64.m */; };
+		1FEF3EBC1CE9B71B00EE8DCC /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EB61CE9B71B00EE8DCC /* NSData+Encryption.m */; };
+		1FEF3EBD1CE9B71B00EE8DCC /* NSString+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EB81CE9B71B00EE8DCC /* NSString+Encryption.m */; };
+		1FEF3EBE1CE9B71B00EE8DCC /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,7 @@
 		1F33ABF01CDB37050031E07C /* CollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionVC.m; sourceTree = "<group>"; };
 		1F33ABF21CDB38570031E07C /* MYCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCollectionViewLayout.h; sourceTree = "<group>"; };
 		1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCollectionViewLayout.m; sourceTree = "<group>"; };
+		1F5B21061CE57B8500C94765 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1F7EBD301CCF50550056003F /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
 		1F7EBD311CCF50550056003F /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -84,6 +91,16 @@
 		1FD9E2661CD98877007606ED /* JSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWebView.h; sourceTree = "<group>"; };
 		1FD9E2671CD98877007606ED /* JSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWebView.m; sourceTree = "<group>"; };
 		1FD9E2691CD98C98007606ED /* webjs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webjs.html; sourceTree = "<group>"; };
+		1FEF3EAE1CE9A25000EE8DCC /* NSString+HashWithType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HashWithType.h"; sourceTree = "<group>"; };
+		1FEF3EAF1CE9A25000EE8DCC /* NSString+HashWithType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HashWithType.m"; sourceTree = "<group>"; };
+		1FEF3EB31CE9B71B00EE8DCC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1FEF3EB41CE9B71B00EE8DCC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1FEF3EB51CE9B71B00EE8DCC /* NSData+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encryption.h"; sourceTree = "<group>"; };
+		1FEF3EB61CE9B71B00EE8DCC /* NSData+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encryption.m"; sourceTree = "<group>"; };
+		1FEF3EB71CE9B71B00EE8DCC /* NSString+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encryption.h"; sourceTree = "<group>"; };
+		1FEF3EB81CE9B71B00EE8DCC /* NSString+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encryption.m"; sourceTree = "<group>"; };
+		1FEF3EB91CE9B71B00EE8DCC /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
+		1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5B21071CE57B8500C94765 /* SystemConfiguration.framework in Frameworks */,
 				1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */,
 				1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */,
 			);
@@ -116,6 +134,7 @@
 		1F05D21F1CC47987000F404A = {
 			isa = PBXGroup;
 			children = (
+				1F5B21061CE57B8500C94765 /* SystemConfiguration.framework */,
 				1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */,
 				1F05D2611CC48794000F404A /* libsqlite3.tbd */,
 				1F05D22A1CC47987000F404A /* myDemoAddUp */,
@@ -154,11 +173,14 @@
 				1FD9E2631CD986C3007606ED /* WebJsViewController.m */,
 				1F20F7CE1CE17D4C00972012 /* NetWorkViewController.h */,
 				1F20F7CF1CE17D4C00972012 /* NetWorkViewController.m */,
+				1FEF3EAE1CE9A25000EE8DCC /* NSString+HashWithType.h */,
+				1FEF3EAF1CE9A25000EE8DCC /* NSString+HashWithType.m */,
 				1F33ABEF1CDB37050031E07C /* CollectionVC.h */,
 				1F33ABF01CDB37050031E07C /* CollectionVC.m */,
 				1F33ABF21CDB38570031E07C /* MYCollectionViewLayout.h */,
 				1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
+				1FEF3EB21CE9B71B00EE8DCC /* encrypt */,
 				1FD9E2651CD98767007606ED /* WebAndJS */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
@@ -202,6 +224,21 @@
 				1FD9E2691CD98C98007606ED /* webjs.html */,
 			);
 			path = WebAndJS;
+			sourceTree = "<group>";
+		};
+		1FEF3EB21CE9B71B00EE8DCC /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF3EB31CE9B71B00EE8DCC /* NSData+Base64.h */,
+				1FEF3EB41CE9B71B00EE8DCC /* NSData+Base64.m */,
+				1FEF3EB51CE9B71B00EE8DCC /* NSData+Encryption.h */,
+				1FEF3EB61CE9B71B00EE8DCC /* NSData+Encryption.m */,
+				1FEF3EB71CE9B71B00EE8DCC /* NSString+Encryption.h */,
+				1FEF3EB81CE9B71B00EE8DCC /* NSString+Encryption.m */,
+				1FEF3EB91CE9B71B00EE8DCC /* NSString+Hashing.h */,
+				1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */,
+			);
+			path = encrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,14 +375,19 @@
 				1F33ABF11CDB37050031E07C /* CollectionVC.m in Sources */,
 				1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */,
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
+				1FEF3EBB1CE9B71B00EE8DCC /* NSData+Base64.m in Sources */,
 				1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */,
 				1F33ABF41CDB38570031E07C /* MYCollectionViewLayout.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
+				1FEF3EBC1CE9B71B00EE8DCC /* NSData+Encryption.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
 				1F20F7D01CE17D4C00972012 /* NetWorkViewController.m in Sources */,
+				1FEF3EBE1CE9B71B00EE8DCC /* NSString+Hashing.m in Sources */,
 				1FB79B291CD059FB00702263 /* AFViewController.m in Sources */,
 				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,
+				1FEF3EB01CE9A25000EE8DCC /* NSString+HashWithType.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,
+				1FEF3EBD1CE9B71B00EE8DCC /* NSString+Encryption.m in Sources */,
 				1FD9E2681CD98877007606ED /* JSWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
