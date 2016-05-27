@@ -19,7 +19,7 @@
  * NSURL 对象包括基地址  base address ,web应用和需要传送的参数
  
  
- *NSURLRequest 对象负责保存需要传送给web服务器的全部数据. 包括一个url对象,缓存方案(caching policy),等待web服务器响应的最长时间和需要通过http传输的额外信息. header body等
+ *NSURLRequest 对象负责保存需要传送给web服务器的全部数据. 包括一个url对象,缓存方案(cache policy),等待web服务器响应的最长时间和需要通过http传输的额外信息. header body等
  
  *NSURLSessionTask 对象表示一个NSURLRequest的声明周期. NSURLSessionTask可以追踪NSURLRequest,还可以对NSURLRequest执行取消\暂停\继续等操作.有三个不同功能的子类
  

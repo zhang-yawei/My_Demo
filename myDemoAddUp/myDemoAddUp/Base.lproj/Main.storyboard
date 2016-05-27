@@ -138,7 +138,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="netWork" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7G-gg-1xb">
-                                                    <rect key="frame" x="24" y="0.0" width="291" height="35.5"/>
+                                                    <rect key="frame" x="26" y="0.0" width="291" height="35.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -149,13 +149,24 @@
                                             <segue destination="bjw-12-qiy" kind="push" id="MZm-IA-ytQ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8lq-os-eNU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8lq-os-eNU">
                                         <rect key="frame" x="0.0" y="372" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8lq-os-eNU" id="TWa-Ir-9Gm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第三方  登录\分享" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R13-Dy-Kq3">
+                                                    <rect key="frame" x="29" y="3" width="291" height="35.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Icu-sV-80D" kind="push" id="MmC-JB-cX7"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="F7n-jE-HNv">
                                         <rect key="frame" x="0.0" y="416" width="375" height="44"/>
@@ -358,6 +369,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNF-Kn-l5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1247.5" y="166.5"/>
+        </scene>
+        <!--Login And Share-->
+        <scene sceneID="h6i-aG-eQZ">
+            <objects>
+                <viewController id="Icu-sV-80D" customClass="QQLoginAndShare" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pxu-zR-36A"/>
+                        <viewControllerLayoutGuide type="bottom" id="2RZ-dK-1Fa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="whN-Q3-vxq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-0B-NAH">
+                                <rect key="frame" x="56" y="117" width="57" height="30"/>
+                                <state key="normal" title="QQ 登录"/>
+                                <connections>
+                                    <action selector="QQlogin:" destination="Icu-sV-80D" eventType="touchUpInside" id="M3g-fj-0Hk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgS-FG-gQT">
+                                <rect key="frame" x="38" y="196" width="93" height="30"/>
+                                <state key="normal" title="分享至qq空间"/>
+                                <connections>
+                                    <action selector="shareToQQzone:" destination="Icu-sV-80D" eventType="touchUpInside" id="ofO-Tx-tW9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-FA-KdI">
+                                <rect key="frame" x="49" y="287" width="82" height="30"/>
+                                <state key="normal" title="分享 qq好友"/>
+                                <connections>
+                                    <action selector="shareToQQFriend:" destination="Icu-sV-80D" eventType="touchUpInside" id="3Q5-07-cEX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lN9-Ah-T2n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bai-Kg-6w3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816.5" y="915.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oib-fx-Aoc">

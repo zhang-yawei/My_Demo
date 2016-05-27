@@ -31,7 +31,7 @@
  */
 @property (nonatomic, assign) CGSize itemSize;
 /**
- *  cell与cell之间的距离
+ *  每列cell之间的距离
  */
 @property (nonatomic, assign) CGFloat interitemSpacing;
 /**
@@ -39,5 +39,9 @@
  */
 @property (nonatomic, assign) CGFloat lineSpacing;
 
-@property (nonatomic, assign) UIEdgeInsets contentInse;
+
+/**
+ *  每一个section的insert
+ */
+@property (nonatomic, assign) UIEdgeInsets sectionInsert;
 @end
