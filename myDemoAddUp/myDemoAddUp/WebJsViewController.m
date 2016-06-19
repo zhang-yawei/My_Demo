@@ -9,9 +9,13 @@
 #import "WebJsViewController.h"
 #import "JSWebView.h"
 #import <JavaScriptCore/JavaScriptCore.h>
-@interface WebJsViewController ()
+#import "JsNativeBridge.h"
+
+#define iosJsBridge @"iosJsBridge"
+
+@interface WebJsViewController ()<UIWebViewDelegate>
 {
-    JSWebView *webView;
+    JSWebView *_webView;
 }
 
 @end
@@ -24,23 +28,31 @@
    NSString *htmlPath = [[NSBundle mainBundle]pathForResource:@"webjs" ofType:@"html"];
     NSURL *htmlUrl = [NSURL URLWithString:htmlPath];
     
-    webView = [[JSWebView alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:webView];
+    _webView = [[JSWebView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_webView];
     NSURLRequest *request = [[NSURLRequest alloc]initWithURL:htmlUrl];
-    [webView loadRequest:request];
+    [_webView loadRequest:request];
     
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.backgroundColor = [UIColor redColor];
     button.frame = CGRectMake(200, 200, 100, 50);
-    [webView addSubview:button];
+    [_webView addSubview:button];
     [button addTarget:self action:@selector(buttonPressDown) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    _webView.delegate =self;
+    
+    
     
 }
 
+#pragma mark-- button responder method
+
 -(void)buttonPressDown
 {
-    JSContext *jscontext = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    JSContext *jscontext = [_webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     
     
    JSValue *jsValue = [jscontext evaluateScript:@"window.returnFromJS();"];
@@ -49,19 +61,26 @@
     
 }
 
+#pragma mark -- webView delegate
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+     JSContext *jscontext = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+    
+    JSValue *jsObject = jscontext[iosJsBridge];
+    if (![jsObject toBool]) {
+        jscontext[iosJsBridge] = [JsNativeBridge shareInstance];
+        
+    }
+    
+    
+    
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -33,6 +33,7 @@
 		1FEF3EBC1CE9B71B00EE8DCC /* NSData+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EB61CE9B71B00EE8DCC /* NSData+Encryption.m */; };
 		1FEF3EBD1CE9B71B00EE8DCC /* NSString+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EB81CE9B71B00EE8DCC /* NSString+Encryption.m */; };
 		1FEF3EBE1CE9B71B00EE8DCC /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */; };
+		ACA5B9311D14B98000D59053 /* JsNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA5B9301D14B98000D59053 /* JsNativeBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		1FEF3EB81CE9B71B00EE8DCC /* NSString+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encryption.m"; sourceTree = "<group>"; };
 		1FEF3EB91CE9B71B00EE8DCC /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
 		1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
+		ACA5B92F1D14B98000D59053 /* JsNativeBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsNativeBridge.h; sourceTree = "<group>"; };
+		ACA5B9301D14B98000D59053 /* JsNativeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsNativeBridge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,7 @@
 				1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
 				1FEF3EB21CE9B71B00EE8DCC /* encrypt */,
+				AC18E35C1D142A9C00DD280D /* JSwebView */,
 				1FD9E2651CD98767007606ED /* WebAndJS */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
 				1F05D2391CC47987000F404A /* LaunchScreen.storyboard */,
@@ -239,6 +243,15 @@
 				1FEF3EBA1CE9B71B00EE8DCC /* NSString+Hashing.m */,
 			);
 			path = encrypt;
+			sourceTree = "<group>";
+		};
+		AC18E35C1D142A9C00DD280D /* JSwebView */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5B92F1D14B98000D59053 /* JsNativeBridge.h */,
+				ACA5B9301D14B98000D59053 /* JsNativeBridge.m */,
+			);
+			path = JSwebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +395,7 @@
 				1FEF3EBC1CE9B71B00EE8DCC /* NSData+Encryption.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
 				1F20F7D01CE17D4C00972012 /* NetWorkViewController.m in Sources */,
+				ACA5B9311D14B98000D59053 /* JsNativeBridge.m in Sources */,
 				1FEF3EBE1CE9B71B00EE8DCC /* NSString+Hashing.m in Sources */,
 				1FB79B291CD059FB00702263 /* AFViewController.m in Sources */,
 				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,

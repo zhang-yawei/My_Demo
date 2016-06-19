@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
-@interface JsNativeBridge : NSObject
+@protocol JsNativeBridgeDelegate <JSExport>
+
+
+-(void)testLog:(NSString *)string;
+
+-(void)testTwo:(NSString *)str ArgLog:(NSInteger)count;
+
+@end
+
+
+@interface JsNativeBridge : NSObject<JsNativeBridgeDelegate>
+
++(instancetype)shareInstance;
 
 @end
