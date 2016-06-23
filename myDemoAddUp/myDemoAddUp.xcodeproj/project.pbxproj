@@ -24,6 +24,15 @@
 		1F5B21071CE57B8500C94765 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5B21061CE57B8500C94765 /* SystemConfiguration.framework */; };
 		1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7EBD311CCF50550056003F /* JSCoreViewController.m */; };
 		1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */; };
+		1F8739B91D1BB30E00719560 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739B81D1BB30E00719560 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1F8739BB1D1BB36D00719560 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8739BA1D1BB36D00719560 /* libxml2.tbd */; };
+		1F8739BE1D1BB6C300719560 /* XMLandHtmlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739BD1D1BB6C300719560 /* XMLandHtmlVC.m */; };
+		1F8739C11D1BBBD200719560 /* monlthyInfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1F8739C01D1BBBD200719560 /* monlthyInfo.xml */; };
+		1F8739CB1D1BCE9200719560 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F8739C31D1BCE9200719560 /* LICENSE.txt */; };
+		1F8739CC1D1BCE9200719560 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739C41D1BCE9200719560 /* README.markdown */; };
+		1F8739CD1D1BCE9200719560 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739C61D1BCE9200719560 /* TFHpple.m */; };
+		1F8739CE1D1BCE9200719560 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739C81D1BCE9200719560 /* TFHppleElement.m */; };
+		1F8739CF1D1BCE9200719560 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8739CA1D1BCE9200719560 /* XPathQuery.m */; };
 		1FB79B291CD059FB00702263 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB79B281CD059FB00702263 /* AFViewController.m */; };
 		1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2631CD986C3007606ED /* WebJsViewController.m */; };
 		1FD9E2681CD98877007606ED /* JSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9E2671CD98877007606ED /* JSWebView.m */; };
@@ -85,6 +94,20 @@
 		1F7EBD301CCF50550056003F /* JSCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCoreViewController.h; sourceTree = "<group>"; };
 		1F7EBD311CCF50550056003F /* JSCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCoreViewController.m; sourceTree = "<group>"; };
 		1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1F8739B71D1BB30E00719560 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		1F8739B81D1BB30E00719560 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		1F8739BA1D1BB36D00719560 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		1F8739BC1D1BB6C300719560 /* XMLandHtmlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLandHtmlVC.h; sourceTree = "<group>"; };
+		1F8739BD1D1BB6C300719560 /* XMLandHtmlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLandHtmlVC.m; sourceTree = "<group>"; };
+		1F8739C01D1BBBD200719560 /* monlthyInfo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = monlthyInfo.xml; sourceTree = "<group>"; };
+		1F8739C31D1BCE9200719560 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		1F8739C41D1BCE9200719560 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		1F8739C51D1BCE9200719560 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		1F8739C61D1BCE9200719560 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		1F8739C71D1BCE9200719560 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		1F8739C81D1BCE9200719560 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		1F8739C91D1BCE9200719560 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		1F8739CA1D1BCE9200719560 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		1FB79B271CD059FB00702263 /* AFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
 		1FB79B281CD059FB00702263 /* AFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
 		1FD9E2621CD986C3007606ED /* WebJsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebJsViewController.h; sourceTree = "<group>"; };
@@ -111,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8739BB1D1BB36D00719560 /* libxml2.tbd in Frameworks */,
 				1F5B21071CE57B8500C94765 /* SystemConfiguration.framework in Frameworks */,
 				1F7EBD341CCF50CB0056003F /* JavaScriptCore.framework in Frameworks */,
 				1F05D2621CC48794000F404A /* libsqlite3.tbd in Frameworks */,
@@ -137,6 +161,7 @@
 		1F05D21F1CC47987000F404A = {
 			isa = PBXGroup;
 			children = (
+				1F8739BA1D1BB36D00719560 /* libxml2.tbd */,
 				1F5B21061CE57B8500C94765 /* SystemConfiguration.framework */,
 				1F7EBD331CCF50CB0056003F /* JavaScriptCore.framework */,
 				1F05D2611CC48794000F404A /* libsqlite3.tbd */,
@@ -176,6 +201,8 @@
 				1FD9E2631CD986C3007606ED /* WebJsViewController.m */,
 				1F20F7CE1CE17D4C00972012 /* NetWorkViewController.h */,
 				1F20F7CF1CE17D4C00972012 /* NetWorkViewController.m */,
+				1F8739BC1D1BB6C300719560 /* XMLandHtmlVC.h */,
+				1F8739BD1D1BB6C300719560 /* XMLandHtmlVC.m */,
 				1FEF3EAE1CE9A25000EE8DCC /* NSString+HashWithType.h */,
 				1FEF3EAF1CE9A25000EE8DCC /* NSString+HashWithType.m */,
 				1F33ABEF1CDB37050031E07C /* CollectionVC.h */,
@@ -183,7 +210,9 @@
 				1F33ABF21CDB38570031E07C /* MYCollectionViewLayout.h */,
 				1F33ABF31CDB38570031E07C /* MYCollectionViewLayout.m */,
 				1F05D2341CC47987000F404A /* Main.storyboard */,
+				1F8739BF1D1BBBD200719560 /* resource */,
 				1FEF3EB21CE9B71B00EE8DCC /* encrypt */,
+				1F8739B51D1BB30E00719560 /* third */,
 				AC18E35C1D142A9C00DD280D /* JSwebView */,
 				1FD9E2651CD98767007606ED /* WebAndJS */,
 				1F05D2371CC47987000F404A /* Assets.xcassets */,
@@ -218,6 +247,49 @@
 				1F05D2521CC47987000F404A /* Info.plist */,
 			);
 			path = myDemoAddUpUITests;
+			sourceTree = "<group>";
+		};
+		1F8739B51D1BB30E00719560 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				1F8739C21D1BCE9200719560 /* hpple */,
+				1F8739B61D1BB30E00719560 /* XMLSupport */,
+			);
+			name = third;
+			path = WebAndJS/third;
+			sourceTree = "<group>";
+		};
+		1F8739B61D1BB30E00719560 /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				1F8739B71D1BB30E00719560 /* GDataXMLNode.h */,
+				1F8739B81D1BB30E00719560 /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+		1F8739BF1D1BBBD200719560 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				1F8739C01D1BBBD200719560 /* monlthyInfo.xml */,
+			);
+			name = resource;
+			path = myDemoAddUp/resource;
+			sourceTree = SOURCE_ROOT;
+		};
+		1F8739C21D1BCE9200719560 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				1F8739C31D1BCE9200719560 /* LICENSE.txt */,
+				1F8739C41D1BCE9200719560 /* README.markdown */,
+				1F8739C51D1BCE9200719560 /* TFHpple.h */,
+				1F8739C61D1BCE9200719560 /* TFHpple.m */,
+				1F8739C71D1BCE9200719560 /* TFHppleElement.h */,
+				1F8739C81D1BCE9200719560 /* TFHppleElement.m */,
+				1F8739C91D1BCE9200719560 /* XPathQuery.h */,
+				1F8739CA1D1BCE9200719560 /* XPathQuery.m */,
+			);
+			path = hpple;
 			sourceTree = "<group>";
 		};
 		1FD9E2651CD98767007606ED /* WebAndJS */ = {
@@ -357,6 +429,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8739CB1D1BCE9200719560 /* LICENSE.txt in Resources */,
+				1F8739C11D1BBBD200719560 /* monlthyInfo.xml in Resources */,
 				1FD9E26A1CD98C98007606ED /* webjs.html in Resources */,
 				1F05D23B1CC47987000F404A /* LaunchScreen.storyboard in Resources */,
 				1F05D2381CC47987000F404A /* Assets.xcassets in Resources */,
@@ -388,17 +462,23 @@
 				1F33ABF11CDB37050031E07C /* CollectionVC.m in Sources */,
 				1F2C47E21CC736200044E622 /* CFNetworkViewController.m in Sources */,
 				1F05D2331CC47987000F404A /* ViewController.m in Sources */,
+				1F8739B91D1BB30E00719560 /* GDataXMLNode.m in Sources */,
 				1FEF3EBB1CE9B71B00EE8DCC /* NSData+Base64.m in Sources */,
 				1FD9E2641CD986C3007606ED /* WebJsViewController.m in Sources */,
 				1F33ABF41CDB38570031E07C /* MYCollectionViewLayout.m in Sources */,
 				1F05D2601CC47B13000F404A /* SQLViewController.m in Sources */,
+				1F8739CE1D1BCE9200719560 /* TFHppleElement.m in Sources */,
 				1FEF3EBC1CE9B71B00EE8DCC /* NSData+Encryption.m in Sources */,
+				1F8739CF1D1BCE9200719560 /* XPathQuery.m in Sources */,
+				1F8739CD1D1BCE9200719560 /* TFHpple.m in Sources */,
 				1F05D2301CC47987000F404A /* AppDelegate.m in Sources */,
 				1F20F7D01CE17D4C00972012 /* NetWorkViewController.m in Sources */,
+				1F8739CC1D1BCE9200719560 /* README.markdown in Sources */,
 				ACA5B9311D14B98000D59053 /* JsNativeBridge.m in Sources */,
 				1FEF3EBE1CE9B71B00EE8DCC /* NSString+Hashing.m in Sources */,
 				1FB79B291CD059FB00702263 /* AFViewController.m in Sources */,
 				1F7EBD321CCF50550056003F /* JSCoreViewController.m in Sources */,
+				1F8739BE1D1BB6C300719560 /* XMLandHtmlVC.m in Sources */,
 				1FEF3EB01CE9A25000EE8DCC /* NSString+HashWithType.m in Sources */,
 				1F05D22D1CC47987000F404A /* main.m in Sources */,
 				1FEF3EBD1CE9B71B00EE8DCC /* NSString+Encryption.m in Sources */,
@@ -543,8 +623,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = myDemoAddUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-libxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.myDemoAddUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -554,8 +639,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = myDemoAddUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LIBTOOLFLAGS = "-libxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = zhang.myDemoAddUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

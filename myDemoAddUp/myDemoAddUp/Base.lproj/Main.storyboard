@@ -149,13 +149,24 @@
                                             <segue destination="bjw-12-qiy" kind="push" id="MZm-IA-ytQ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8lq-os-eNU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8lq-os-eNU">
                                         <rect key="frame" x="0.0" y="372" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8lq-os-eNU" id="TWa-Ir-9Gm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xml and html" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qP-9a-phh">
+                                                    <rect key="frame" x="25" y="0.0" width="291" height="35.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f8y-Sr-J3k" kind="push" id="tDO-Iq-DKI"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="F7n-jE-HNv">
                                         <rect key="frame" x="0.0" y="416" width="375" height="44"/>
@@ -311,6 +322,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3r5-Ng-LiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1368.5" y="-2676.5"/>
+        </scene>
+        <!--xml and html-->
+        <scene sceneID="uFw-Wy-CDF">
+            <objects>
+                <viewController id="f8y-Sr-J3k" customClass="XMLandHtmlVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MrO-9S-Qdu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ik8-xf-ii2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pIW-2g-gkI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikP-WJ-Nda">
+                                <rect key="frame" x="242" y="140" width="59" height="30"/>
+                                <state key="normal" title="生成 xml"/>
+                                <connections>
+                                    <action selector="creatXml:" destination="f8y-Sr-J3k" eventType="touchUpInside" id="5zt-FD-Rxo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1q-V1-fHx">
+                                <rect key="frame" x="43" y="260" width="101" height="37"/>
+                                <state key="normal" title="解析 html"/>
+                                <connections>
+                                    <action selector="anazlyHtml:" destination="f8y-Sr-J3k" eventType="touchUpInside" id="ny6-jO-uOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypj-LA-jjs">
+                                <rect key="frame" x="43" y="140" width="101" height="37"/>
+                                <state key="normal" title="解析xml"/>
+                                <connections>
+                                    <action selector="analyzXml:" destination="f8y-Sr-J3k" eventType="touchUpInside" id="HiL-jW-cSQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="xml and html" id="nf3-Z1-Ac7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJJ-ty-EWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.5" y="-565.5"/>
         </scene>
         <!--netWork-->
         <scene sceneID="HY1-Dk-kdu">

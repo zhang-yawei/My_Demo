@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <GetPackProductInfoListRsp>
+        <productList>
+            <ProductInfo>
+                <catalogID>84211</catalogID>
+                <catalogName>青春糖果包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 17:24:48</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000215767372.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000215767372.jpg</smallLogo>
+                <description>那些年美好时光、纯真爱恋，是无法忘怀的青春岁月。8元80本青春精品，每月更新。
+</description>
+                <price>800</price>
+                <readPointPrice>800</readPointPrice>
+                <contentCount>72</contentCount>
+                <currentState>1</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365838</catalogID>
+                <catalogName>都市红文包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 16:21:00</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951931.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951931.jpg</smallLogo>
+                <description>都市暧昧，活色生香，纵横花都，群芳争艳，只需5元，100本都市激情大作，每月更新20本！
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>96</contentCount>
+                <currentState>1</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365834</catalogID>
+                <catalogName>出版品质包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 16:18:25</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951373.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951373.jpg</smallLogo>
+                <description>汇聚1000本经管励志、亲子教育、生活时尚、悬疑科幻、影视剧本等出版作品以及漫画、杂志，每月更新100本。</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>999</contentCount>
+                <currentState>1</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>1000003139859</catalogID>
+                <catalogName>穿越幻想包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 15:47:44</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/1000004245176.png</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/1000004245176.png</smallLogo>
+                <description>浪漫与幻想的完美结合，专为多情的你准备的穿越美文。5元50本，每月更新部分图书。
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>50</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>1000003139835</catalogID>
+                <catalogName>浪漫言情包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 15:18:32</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/1000004245188.png</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/1000004245188.png</smallLogo>
+                <description>言情大戏情感盛宴，别样爱情尽在浪漫言情。50本精品只需5元，每月更新10本。
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>50</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365941</catalogID>
+                <catalogName>仙侠玄幻包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 15:17:50</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951921.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951921.jpg</smallLogo>
+                <description>玄幻仙侠，上天入地，超凡出世，唯我独尊！5元狂扫100部爽文，每月更新20本！
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>99</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365835</catalogID>
+                <catalogName>言情扫文包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 11:10:22</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951223.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951223.jpg</smallLogo>
+                <description>各类畅销言情文，让你一次看个够！5元任性看100本佳作，每月为您更新20本！
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>99</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365833</catalogID>
+                <catalogName>女生网文包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 11:06:08</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951370.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951370.jpg</smallLogo>
+                <description>汇聚1000本现代言情、穿越幻想、古代言情、甜美青春热门作品1000本，连载、全本应有尽有，每月更新100本。</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>986</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365832</catalogID>
+                <catalogName>男生网文包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-12 11:02:43</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951367.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951367.jpg</smallLogo>
+                <description>汇聚1000本历史军事、武侠仙侠、现代都市、玄幻奇幻、竞技游戏、官场职场原创网文，连载、全本应有尽有，每月更新100本。</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>986</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>167365836</catalogID>
+                <catalogName>霸道总裁包月</catalogName>
+                <monthType>6</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-07 11:56:13</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/10000002287951220.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/10000002287951220.jpg</smallLogo>
+                <description>男色时代，承包霸道总裁！只需5元，便可畅阅100本总裁文，每月为您更新20本！
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>100</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>16938530</catalogID>
+                <catalogName>翼情时尚包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-07 11:53:10</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216070606.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216070606.jpg</smallLogo>
+                <description>1元尽享15本最热时尚好书，玄幻、言情、出版多种口味，每月更新，阅读更精彩！
+</description>
+                <price>100</price>
+                <readPointPrice>100</readPointPrice>
+                <contentCount>15</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>24283264</catalogID>
+                <catalogName>劲爆精品包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-07 11:51:41</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216539250.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216539250.jpg</smallLogo>
+                <description>畅销出版精品，原创热辣爽文，只需8元尽览80本优质小说，月月更新，引领品质阅读。
+</description>
+                <price>800</price>
+                <readPointPrice>800</readPointPrice>
+                <contentCount>77</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>28023871</catalogID>
+                <catalogName>新城市人包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:01:06</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216649785.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216649785.jpg</smallLogo>
+                <description>既然你来到了城市，就要努力做一个成功的城市人。5元50本，畅阅都市草根成功秘笈。
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>50</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>16938952</catalogID>
+                <catalogName>强者逆天包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:00:55</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216082018.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216082018.jpg</smallLogo>
+                <description>仙法武技藐视天地，斗气异能傲世群雄。50本原创巨著只需5元，每月更新部分图书。</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>50</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>23392520</catalogID>
+                <catalogName>魅惑都市包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:00:45</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216421118.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216421118.jpg</smallLogo>
+                <description>都市重磅精品，尽享豪情霸爱。2016年4月20日至30日使用安卓客户端订购5元魅惑都市包，即可获赠5元等额阅点（使用有效期30天）。每月更新10本，活动期间100本畅快读！
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>50</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>24283263</catalogID>
+                <catalogName>玄幻武侠包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:00:36</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216539468.png</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216539468.png</smallLogo>
+                <description>异世大陆，斗气修炼，修绝世秘功，踏武尊巅峰！8元80本火爆大作，每月更新。
+</description>
+                <price>800</price>
+                <readPointPrice>800</readPointPrice>
+                <contentCount>80</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>49392782</catalogID>
+                <catalogName>魅惑菁品包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:00:21</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000217003538.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000217003538.jpg</smallLogo>
+                <description>魅惑原创or菁品出版？告别选择恐惧症，8元80本，绝品魅惑重磅菁品，每月更新！
+</description>
+                <price>800</price>
+                <readPointPrice>800</readPointPrice>
+                <contentCount>80</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>100000215226486</catalogID>
+                <catalogName>梦回古谈包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-06-06 17:00:13</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000215226485.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000215226485.jpg</smallLogo>
+                <description>看尽风华演绎，体验激荡人生。30本历史穿越类小说，只需3元，每月更新。
+</description>
+                <price>300</price>
+                <readPointPrice>300</readPointPrice>
+                <contentCount>30</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>23392513</catalogID>
+                <catalogName>热血男儿包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-01-26 17:35:41</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000216421465.jpg</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000216421465.jpg</smallLogo>
+                <description>悬疑、军事、游戏、玄幻全都要！屌丝的热血人生，8元60本好书，每月更新20本。
+。</description>
+                <price>800</price>
+                <readPointPrice>800</readPointPrice>
+                <contentCount>80</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>1000003139847</catalogID>
+                <catalogName>巅峰武侠包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-01-11 11:34:26</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/1000004245184.png</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/1000004245184.png</smallLogo>
+                <description>自任侠客，仗剑江湖为红颜，侠之大为国为民。5元50本武林宝典，每月更新10本。
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>27</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+            <ProductInfo>
+                <catalogID>100000214725425</catalogID>
+                <catalogName>军旅生活包月区</catalogName>
+                <monthType>1</monthType>
+                <chargeChannel>2</chargeChannel>
+                <updateTime>2016-01-11 11:34:08</updateTime>
+                <bigLogo>http://jth.tyread.com/product/pic/100000214725424.png</bigLogo>
+                <smallLogo>http://jth.tyread.com/product/pic/100000214725424.png</smallLogo>
+                <description>金戈铁马刀光剑影，烽火四起四面楚歌。5元畅享80本军事著作，每月更新部分图书。
+</description>
+                <price>500</price>
+                <readPointPrice>500</readPointPrice>
+                <contentCount>77</contentCount>
+                <currentState>2</currentState>
+            </ProductInfo>
+        </productList>
+    </GetPackProductInfoListRsp>
+</Response>
