@@ -10,7 +10,7 @@
 #import "MYCollectionViewLayout.h"
 @interface CollectionVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 {
-    MYCollectionViewLayout *_collectionLayout;
+    UICollectionViewFlowLayout *_collectionLayout;
 }
 @property(nonatomic,strong)UICollectionView *collectionView;
 
@@ -20,9 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _collectionLayout = [[MYCollectionViewLayout alloc]init];
-    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+   // _collectionLayout = [[MYCollectionViewLayout alloc]init];
+    _collectionLayout = [[UICollectionViewFlowLayout alloc]init];
     self.collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:_collectionLayout];
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
@@ -86,13 +88,25 @@
 #pragma mark--datasource
 //  required
 
-//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return  (section==0)?4:6;
+}
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionViewCellIdentifier" forIndexPath:indexPath];
+    if (!cell) {
+        if (indexPath.section == 0) {
+            cell = [[UICollectionViewCell alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+
+        }else{
+            cell = [[UICollectionViewCell alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+        }
+        
+    }
     cell.backgroundColor = [UIColor grayColor];
     return cell;
     
@@ -100,7 +114,10 @@
 
 // optional
 
-//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 2;
+}
 
 // The view that is returned must be retrieved from a call to -dequeueReusableSupplementaryViewOfKind:withReuseIdentifier:forIndexPath:
 //- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath;
